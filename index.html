@@ -248,15 +248,40 @@
   display: block;
 }
 
+.class-card {
+  display: grid;
+  /* Widened first column from 135px to 165px so "7:00 PM – 8:30 PM" fits on one line */
+  grid-template-columns: 165px 1fr 125px; 
+  gap: 15px;
+  align-items: center;
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border-left: 5px solid #009c3b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.class-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Keeps the city badge from stretching full width */
+  gap: 3px;
+}
+
+.class-time .day,
+.class-time .hours,
 .city-badge {
-  display: inline-block;
-  margin-top: 6px;
+  white-space: nowrap; /* Forces each item onto its own single line */
+}
+
+.city-badge {
+  margin-top: 4px;
   padding: 2px 8px;
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #ffdf00; /* Brazilian Yellow */
-  color: #002776; /* Brazilian Blue */
+  background-color: #ffdf00;
+  color: #002776;
   border-radius: 4px;
 }
 
