@@ -226,6 +226,79 @@
       .carousel-btn.next { right: 4px; }
     }
 
+    /* Classes */
+.city-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffdf00; /* Brazilian Yellow */
+  color: #002776; /* Brazilian Blue */
+  border-radius: 4px;
+}
+
+.class-details .address a {
+  color: #002776;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.class-details .address a:hover {
+  text-decoration: underline;
+}
+
+.class-details .perks {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #009c3b;
+  font-weight: 600;
+}
+
+.class-price {
+  text-align: right;
+  min-width: 120px;
+}
+
+.sub-price {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.discount-tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  background-color: #e6f4ea;
+  color: #009c3b;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #009c3b;
+  color: #009c3b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #009c3b;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .class-price {
+    text-align: left;
+  }
+}
 
 
   </style>
@@ -242,6 +315,7 @@
       <div class="nav-links">
         <a href="#events">Events</a>
         <a href="#media">Photos & Videos</a>
+        <a href="#classes">Classes</a>
         <a href="#newsletter">Newsletter</a>
         <a href="#dancers">Members</a>
         <a href="#book">Book Us</a>
@@ -318,6 +392,87 @@
    </div>
 
   </section>
+
+  <!-- CLASSES -->
+  <section id="classes" class="schedule-section">
+  <div class="container">
+    <h2>Current Class Schedule</h2>
+    <p class="subtitle">Join us weekly in Davis and Sacramento. All levels welcome!</p>
+
+    <div class="schedule-grid">
+      <!-- Left Side: Flyer Image -->
+      <div class="flyer-container">
+        <img src="images/class-flyer.png" alt="Brazilian Dance Class Schedule Flyer" class="flyer-img">
+        <a href="images/class-flyer.png" download class="btn-outline">Download Flyer</a>
+      </div>
+
+      <!-- Right Side: Detailed Schedule Cards -->
+      <div class="schedule-list">
+        
+        <!-- MONDAY: DAVIS -->
+        <div class="class-card">
+          <div class="class-time">
+            <span class="day">Mondays</span>
+            <span class="hours">7:00 PM – 8:30 PM</span>
+            <span class="city-badge">Davis</span>
+          </div>
+          <div class="class-details">
+            <h3>COMASOCIAL</h3>
+            <p class="address">
+              <a href="https://google.com" target="_blank">📍 223 3rd St, Davis</a>
+            </p>
+            <p class="perks">🥥 Full kitchen & fresh coconut drinks available!</p>
+          </div>
+          <div class="class-price">
+            <div>$15 / class</div>
+            <div class="sub-price">$40 / month</div>
+            <div class="discount-tag">$10 w/ UC Davis ID</div>
+          </div>
+        </div>
+
+        <!-- TUESDAY: SACRAMENTO (SIERRA 2) -->
+        <div class="class-card">
+          <div class="class-time">
+            <span class="day">Tuesdays</span>
+            <span class="hours">7:00 PM – 8:30 PM</span>
+            <span class="city-badge">Sacramento</span>
+          </div>
+          <div class="class-details">
+            <h3>Sierra 2 Center</h3>
+            <p class="address">
+              <a href="https://google.com" target="_blank">📍 2791 24th St, Sacramento</a>
+            </p>
+          </div>
+          <div class="class-price">
+            <div>$15 / class</div>
+            <div class="sub-price">$40 / month</div>
+          </div>
+        </div>
+
+        <!-- THURSDAY: SACRAMENTO (FACES) -->
+        <div class="class-card">
+          <div class="class-time">
+            <span class="day">Thursdays</span>
+            <span class="hours">7:00 PM – 8:00 PM</span>
+            <span class="city-badge">Sacramento</span>
+          </div>
+          <div class="class-details">
+            <h3>Faces</h3>
+            <p class="address">
+              <a href="https://google.com" target="_blank">📍 2000 K St, Sacramento</a>
+            </p>
+            <p class="perks">💃 Dance only (no drums)</p>
+          </div>
+          <div class="class-price">
+            <div>$10 / class</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <section id="donate">
     <div style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
