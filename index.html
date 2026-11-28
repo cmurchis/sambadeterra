@@ -315,11 +315,44 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
+
+    .class-card {
+  display: grid;
+  /* Creates 3 strict columns: 135px for Time, flexible middle for Venue, 125px for Price */
+  grid-template-columns: 135px 1fr 125px; 
+  gap: 15px;
+  align-items: center; /* Vertically centers all 3 columns with each other */
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border-left: 5px solid #009c3b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.class-time {
+  min-width: unset; /* Removes old width rule */
+}
+
+.class-details {
+  padding: 0; /* Grid gap handles the spacing now */
+}
+
+.class-price {
+  text-align: right;
+  min-width: unset;
+}
+
+/* On small phone screens, stack them so text doesn't get squished */
+@media (max-width: 650px) {
+  .class-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
   .class-price {
     text-align: left;
   }
 }
+
 
 
   </style>
